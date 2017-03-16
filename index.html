@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <link href="css/custom.css" rel="stylesheet" type="text/css">
   <link href="css/agency.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -18,11 +16,12 @@
 
 	<header class="cd-header">
 		<div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
-        <div class="col-md-12">
-            <img src="img/logo_general.svg" width="40%">
-        </div>
+
 	</header>
 	<section id="cd-intro">
+            <div class="col-md-12 text-center">
+            <img src="img/logo_general.svg" width="30%">
+        </div>
 		<div id="cd-intro-tagline">
 		</div> <!-- #cd-intro-tagline -->
 	</section> <!-- #cd-intro -->
@@ -147,8 +146,12 @@ Proveer el servicio de valuación de manera personal, ágil y expedita para que 
 
 <!-- Add Google Maps -->
 <div id="map" style="height:400px;width:100%;"></div>
+<script src="js/jquery-2.1.1.js"></script>    
+<script src="js/jquery.mixitup.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/modernizr.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    
 <script>
 function initMap() {
         var myLatLng = {lat: 20.609245, lng:-100.400252521};

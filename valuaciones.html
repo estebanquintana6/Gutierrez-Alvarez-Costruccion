@@ -13,16 +13,17 @@
   <link href="css/custom.css" rel="stylesheet" type="text/css">
   <link href="css/agency.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <src src="js/clicks.js"></src>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 	<header class="cd-header">
 		<div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
-        <div class="col-md-12">
-            <img src="img/logo_valuacion.svg" width="35%">
-        </div>
 	</header>
 	<section id="cd-intro">
+            <div class="col-md-12 text-center">
+            <img src="img/logo_general.svg" width="30%">
+        </div>
 		<div id="cd-intro-tagline">
 		</div> <!-- #cd-intro-tagline -->
 	</section> <!-- #cd-intro -->
@@ -33,19 +34,13 @@
 			<ul>
 				<li>
 					<a href="#about">
-						<b>Somos</b>
+						<b>Acerca</b>
 						<span></span><!-- icon -->
 					</a>
 				</li>
 				<li>
 					<a href="#services">
 						<b>Servicios</b>
-						<span></span><!-- icon -->
-					</a>
-				</li>
-				<li>
-					<a href="#mision">
-						<b>Misión/Visión</b>
 						<span></span><!-- icon -->
 					</a>
 				</li>				
@@ -74,136 +69,131 @@
   </div>
 </div>    
 </section>
-    
+
 <section id="services" class="container-fluid text-center">
-<div class="container">    
+<div class="container">
+<div class="">
   <h2>Tipos de valuaciones</h2>
   <br>
   <div class="row slideanim">
-    <div class="col-sm-4">
-      <img src="img/store.png" width="30%">
-      <h4>Comerciales e hipotecarios</h4>
+    <div class="col-sm-4" id="av1">
+        <img src="img/store.png" width="30%"onclick="myComerciales(1)">
+      <h4 id="av1">Comerciales e hipotecarios</h4>
     </div>
-    <div class="col-sm-4">
-      <img src="img/real-estate.svg" width="30%">
-      <h4>Fiscales</h4>
+    <div class="col-sm-4" id="av2">
+      <img src="img/real-estate.svg" width="30%" onclick="myComerciales(2)">
+      <h4 >Fiscales</h4>
     </div>
-    <div class="col-sm-4">
-      <img src="img/airplane.png" width="30%">
+    <div class="col-sm-4"  id="av3">
+      <img src="img/airplane.png" width="30%" onclick="myComerciales(3)">
       <h4>Bienes muebles, maquinaria y equipo</h4>
     </div>      
   </div>
     <div class="row slideanim" style="margin-top:5%">
-        <div class="col-sm-6">
-            <img src="img/store.png" width="20%">
+        <div class="col-sm-6" id="av4">
+            <img src="img/store.png" width="20%" onclick="myComerciales(4)">
             <h4>Especializados</h4>
         </div>
-        <div class="col-sm-6">
-            <img src="img/store.png" width="20%">
+        <div class="col-sm-6" id="av5">
+            <img src="img/store.png" width="20%" onclick="myComerciales(5)">
             <h4>Constitución de regimen de condominio</h4>
         </div>
     </div>
-</div>    
+    <div class="row" id="tog1" style="display:none" >
+        <div class="col-sm-4" >
+            <img src="img/store.png" width="30%" onclick="showAvaluos()">
+        </div>
+        <div class="col-sm-8">
+            <h3>Avaluos para INFONAVIT, FOVISSSTE, SHF, BANJERCITO.</h3>
+        </div>
+    </div>
+    <div class="row" id="tog2" style="display:none" >
+        <div class="col-sm-4" >
+            <img src="img/real-estate.svg" width="30%" onclick="showAvaluos()">
+        </div>
+        <div class="col-sm-8">
+            <h3>Avaluos para traslado de dominio, escrituración e impuestos locales y federales</h3>
+        </div>
+    </div>
+    <div class="row" id="tog3" style="display:none" >
+        <div class="col-sm-4" >
+           <img src="img/airplane.png" width="30%" onclick="showAvaluos()">
+        </div>
+        <div class="col-sm-8">
+            <h4>Si usted tiene la necesidad de determinar con precisión el valor del equipo que interviene en sus procesos, satisfacer las necesidades de sus inversionistas o justificar el valor de sus muebles, maquinarios o equipo para otros fines.</h4>
+        </div>
+    </div>
+    <div class="row" id="tog4" style="display:none" >
+        <div class="col-sm-4" >
+           <img src="img/store.png" width="30%" onclick="showAvaluos()">
+        </div>
+        <div class="col-sm-8">
+            <ul>
+            	<li><strong>Intangibles</strong>  : Marcas, nombre comercial, software franquicia.</li>
+                <li><strong>Negocios en marcha</strong>: Si necesita saber el valor de su negocio por lo que es y lo que produce, no solamente por el valor intrínseco de sus activos y pasivos.</li>
+                <li><strong>Plantas industriales</strong></li>
+                <li><strong>Agropecuarios</strong></li>
+                <li><strong>Fines contables (C-10, B15, C8) Bajo las normas IFRS, NIF, FASB</strong></li>
+            </ul>
+        </div>
+    </div>    
+    <div class="row" id="tog5" style="display:none" >
+        <div class="col-sm-4" >
+           <img src="img/store.png" width="30%" onclick="showAvaluos()">
+        </div>
+        <div class="col-sm-8">
+            <h3>Incluyendo: Tramitología y memoria descriptiva.</h3>
+        </div>
+    </div>      
+        </div> 
+    </div>
+    </section>
+<section>    
+    <main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">Todos</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all" id="cat0">Todos</a></li>
+                    <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1" id="cat1">Comerciales</a></li>
+                    <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2" id="cat2">Fiscales</a></li>
+                    <li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3" id="cat3">Inmuebles</a></li>
+                    <li class="filter" data-filter=".color-4"><a href="#0" data-type="color-4" id="cat4">Especializados</a></li>
+                    <li class="filter" data-filter=".color-5"><a href="#0" data-type="color-5" id="cat5">Regimen de condominio</a></li>
+                    
+                    
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix color-1"><img src="img/img-1.jpg" alt="Image 1"></li>
+				<li class="mix color-2"><img src="img/img-2.jpg" alt="Image 2"></li>
+				<li class="mix color-1"><img src="img/img-3.jpg" alt="Image 3"></li>
+				<li class="mix color-1"><img src="img/img-4.jpg" alt="Image 4"></li>
+				<li class="mix color-1"><img src="img/img-5.jpg" alt="Image 5"></li>
+				<li class="mix color-2"><img src="img/img-6.jpg" alt="Image 6"></li>
+				<li class="mix color-2"><img src="img/img-7.jpg" alt="Image 7"></li>
+				<li class="mix color-1"><img src="img/img-8.jpg" alt="Image 8"></li>
+				<li class="mix color-2"><img src="img/img-9.jpg" alt="Image 9"></li>
+				<li class="mix color-1"><img src="img/img-10.jpg" alt="Image 10"></li>
+				<li class="mix color-1"><img src="img/img-11.jpg" alt="Image 11"></li>
+				<li class="mix color-2"><img src="img/img-12.jpg" alt="Image 12"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+	</main> <!-- cd-main-content -->
+
 </section>
-        
 
 <!-- Container (Services Section) -->
- <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -416,6 +406,7 @@
 
 <!-- Add Google Maps -->
 <div id="map" style="height:400px;width:100%;"></div>
+<script src="js/jquery.mixitup.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/modernizr.js"></script>
 <script>
@@ -484,6 +475,33 @@ $(document).ready(function(){
     });
   });
 })
+
+function myComerciales(id) {
+    var clas =  "cat" + id;
+    var e = document.getElementById(clas);
+    
+    for(i=1; i<6; i++){
+        var aux =  "av" + i;
+        $('#'+aux).hide();
+    }
+    
+    $('#tog' + id).fadeIn("slow");
+    
+    e.click();
+}
+    
+function showAvaluos(){
+    for(i=1; i<6; i++){
+        var aux =  "tog" + i;
+        $('#'+aux).hide();
+    }
+        for(i=1; i<6; i++){
+        var av = "av" + i;
+        $('#'+av).fadeIn("slow");
+    }
+    $('#cat0').click();
+}
+
 </script>
 
 </body>
