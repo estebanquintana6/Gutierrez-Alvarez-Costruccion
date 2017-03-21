@@ -62,6 +62,7 @@ Navigation
 
 -------------------------------- */
 .cd-header {
+  z-index: 1000 !important;
   position: absolute;
   top: 0;
   left: 0;
