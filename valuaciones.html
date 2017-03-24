@@ -20,10 +20,11 @@
 	<header class="cd-header">
 		<div id="cd-logo"><a href="#0"><a href="index.html" class="button">Regresar</a></a></div>
 	</header>
-	<section id="cd-intro">
+	<section id="cd-intro" class="cd-valuaciones">
+        <div class="overlay"></div>
         <div class="row">
             <div class="col-md-12 text-center">
-            <img src="img/logo_general.svg" width="30%">
+            <img src="img/logo_general.svg" width="30%" class="logoresponsive">
         </div>
         </div>
    
@@ -256,7 +257,7 @@ Con nosotros usted encontrará la apreciación justa y real de sus bienes así c
 <script src="js/modernizr.js"></script>
 <script>
 function initMap() {
-        var myLatLng = {lat: 20.609245, lng:-100.400252521};
+        var myLatLng = {lat: 20.609190, lng:-100.4001610};
     
         var map = new google.maps.Map(document.getElementById('map'), {
           center: myLatLng,

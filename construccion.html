@@ -20,10 +20,10 @@
 	<header class="cd-header">
 		<div id="cd-logo"><a href="#0"><a href="index.html" class="button">Regresar</a></a></div>
 	</header>
-	<section id="cd-intro">
+	<section id="cd-intro" class="cd-construccion">
         <div class="row">
             <div class="col-md-12 text-center">
-            <img src="img/logo_general.svg" width="30%">
+            <img src="img/logo_general.svg" width="30%" class="logoresponsive">
         </div>
         </div>
    
@@ -63,10 +63,9 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-8">
-      <h2>Acerca de este servicio</h2><br>
-        <h4>Debemos contribuir a la certidumbre del valor económico que ha logrado nuestro cliente en sus propiedades y/o bienes, así como en los proyectos de desarrollo inmobiliario e industrial por medio de una <strong>APRECIACIÓN TÉCNICA RAZONABLE.</strong> <br><br>
-Con nosotros usted encontrará la apreciación justa y real de sus bienes así como una asesoría completa y profesional para la mejor toma de desiciones.
-</h4>
+      <h2>Construcción</h2><br>
+        <h4>¿Qué proyecto tienes? ¡Nosotros te ayudamos! o bien <br>
+<strong>¡ Dinos lo que necesitas y nosotros te ayudamos a realizarlo !</strong> <br><br></h4>
     </div>
     <div class="col-sm-4">
         <img src="img/Info.png" width="50%" class="slideanim">
@@ -78,49 +77,38 @@ Con nosotros usted encontrará la apreciación justa y real de sus bienes así c
 <section id="services" class="container-fluid text-center">
 <div class="container">
 <div class="">
-  <h2>Tipos de valuaciones</h2>
+  <h2>Proyectos</h2>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4 col-md-offset-2" id="av1">
-        <img src="img/house.png" width="30%"onclick="myComerciales(1)" style="cursor:pointer">
+        <img src="img/digger.svg" width="30%"onclick="myComerciales(1)" style="cursor:pointer">
       <h3 id="av1">Construcción</h3>
     </div>
     <div class="col-sm-4" id="av2">
-      <img src="img/real-estate.svg" width="30%" onclick="myComerciales(2)" style="cursor:pointer">
+      <img src="img/helment.png" width="30%" onclick="myComerciales(2)" style="cursor:pointer">
       <h3>D.R.O.</h3>
     </div>
 </div>
     <div class="row" id="tog1" style="display:none" >
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-4">
-            <h3>Avalúos para: </h3>
-            </div>
+            <div class="col-md-4">
+             <img src="img/digger.svg" width="50%" onclick="showAvaluos()">
         </div>
-        <div class="row">
-            <div class="col-sm-4" >
-                <img src="img/house.png" width="50%" onclick="showAvaluos()"><br>
-            </div>
-            <div class="col-sm-2">
-                <img src="img/logos/2000px-LOGO_SHF.svg.png" width="100%">
-            </div>
-            <div class="col-sm-2">
-                <img src="img/logos/Banjercito-logo.gif" width="100%">
-            </div>
-            <div class="col-sm-2">
-                <img src="img/logos/Logo-Infonavit.png" width="100%">
-            </div>    
-            <div class="col-sm-2">
-                <img src="img/logos/LOGOFOVISSSTE.png" width="100%">
+            <div class="col-sm-8">
+                <br><h4>"Siempre vamos más allá en la calidad de nuestros procesos constructivos para que su inversión sea de larga duración.
+Nuestra experiencia en el ramo garantiza el éxito de su proyecto"
+</h4>
             </div>
         </div>
     </div>
     <div class="row" id="tog2" style="display:none" >
         <div class="col-sm-4" >
-            <img src="img/real-estate.svg" width="50%" onclick="showAvaluos()"><br>
+            <img src="img/helment.png" width="50%" onclick="showAvaluos()"><br>
 
         </div>
         <div class="col-sm-8">
-            <h3>Avalúos para traslado de dominio, escrituración e impuestos locales y federales</h3>
+            <h4>El D.R.O. es el profesionista responsable de que la calidad de los trabajos en una obra civil se realicen de conformidad con lo establecido en las especificaciones constructivas y en los reglamentos aplicables.<br><br><strong>Nosotros podemos apoyarte para que tu tengas la seguridad de la calidad y administración adecuada en tu obra.</strong>
+</h4>
         </div>
     </div>   
         </div> 
@@ -135,33 +123,32 @@ Con nosotros usted encontrará la apreciación justa y real de sus bienes así c
 						<a data-type="all" href="#0">Todos</a> <!-- selected option on mobile -->
 					</li> 
 					<li class="filter"><a class="selected" href="#0" data-type="all" id="cat0">Todos</a></li>
-                    <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1" id="cat1">Comerciales</a></li>
-                    <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2" id="cat2">Fiscales</a></li>
+                    <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1" id="cat1">Construcción</a></li>
+                    <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2" id="cat2">D.R.O.</a></li>
                     
                     
 				</ul> <!-- cd-filters -->
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
 
-		<section class="cd-gallery bg-blue"  style="margin-bottom: 3%;">
+		<section class="cd-gallery bg-grey"  style="margin-bottom: 3%;">
 			<ul>
-				<li class="mix color-1"><img src="img/portfolio/VALUACI%C3%93N%20COMERCIAL.JPG" alt="Image 1"></li>
-				<li class="mix color-1"><img src="img/portfolio/P1210001.JPG" alt="Image 2"></li>
-				<li class="mix color-1"><img src="img/portfolio/DSC04379.JPG" alt="Image 3"></li>
-				<li class="mix color-1"><img src="img/portfolio/DSC08548.JPG" alt="Image 4"></li>
-				<li class="mix color-1"><img src="img/portfolio/DSC02445.JPG" alt="Image 5"></li>
-				<li class="mix color-1"><img src="img/portfolio/P1210010.JPG" alt="Image 6"></li>
-				<li class="mix color-1"><img src="img/portfolio/BODEGA%20COMERCIAL%20CON%20OFICINAS.jpg" alt="Image 7"></li>
-				<li class="mix color-2"><img src="img/portfolio/DSC00757.JPG" alt="Image 8"></li>
-				<li class="mix color-2"><img src="img/portfolio/IMGP8589.JPG" alt="Image 9"></li>
-				<li class="mix color-2"><img src="img/portfolio/P1040119.JPG" alt="Image 10"></li>
-				<li class="mix color-2"><img src="img/portfolio/koloria.jpg" alt="Image 11"></li>
-				<li class="mix color-2"><img src="img/portfolio/DSC02410.JPG" alt="Image 12"></li>
-				<li class="mix color-2"><img src="img/portfolio/DSC03032.JPG" alt="Image 13"></li>
-				<li class="mix color-2 color-5"><img src="img/portfolio/14-%20feb%20-%2014%20049.jpg" alt="Image 14"></li>
-				<li class="mix color-2"><img src="img/portfolio/6-08%20003.jpg" alt="Image 15"></li>
-                <li class="mix color-2"><img src="img/portfolio/valuacioninmueble.JPG" alt="Image 16"></li>
-                <li class="mix color-2"><img src="img/portfolio/IMGP2429.JPG" alt="Image 17"></li>
+				<li class="mix color-1"><img src="img/portfolioconstruccion/c1.jpg" alt="Image 1"></li>
+				<li class="mix color-1 color-2"><img src="img/portfolioconstruccion/c10%20dro.JPG" alt="Image 2"></li>
+				<li class="mix color-1"><img src="img/portfolioconstruccion/c11%20dro.JPG" alt="Image 3"></li>
+				<li class="mix color-1"><img src="img/portfolioconstruccion/c12.JPG" alt="Image 4"></li>
+                <li class="mix color-1 color-2"><img src="img/portfolioconstruccion/c13%20dro.JPG" alt="Image 5"></li>
+				<li class="mix color-1 color-2"><img src="img/portfolioconstruccion/c14%20dro.JPG" alt="Image 6"></li>
+				<li class="mix color-1 color-2"><img src="img/portfolioconstruccion/c15%20dro.JPG" alt="Image 7"></li>
+				<li class="mix color-1"><img src="img/portfolioconstruccion/c2.jpg" alt="Image 12"></li>
+				<li class="mix color-1"><img src="img/portfolioconstruccion/c3.jpg" alt="Image 13"></li>
+				<li class="mix color-1"><img src="img/portfolioconstruccion/c4.jpg" alt="Image 14"></li>
+				<li class="mix color-1 color-2"><img src="img/portfolioconstruccion/c17%20dro.JPG" alt="Image 9"></li>
+				<li class="mix color-2 color-1"><img src="img/portfolioconstruccion/alberca.jpg" alt="Image 10"></li>
+				<li class="mix color-1"><img src="img/portfolioconstruccion/c5.JPG" alt="Image 15"></li>
+                <li class="mix color-1"><img src="img/portfolioconstruccion/c6.jpg" alt="Image 16"></li>
+                <li class="mix color-1"><img src="img/portfolioconstruccion/c7.JPG" alt="Image 17"></li>
+                <li class="mix color-1 color-2"><img src="img/portfolioconstruccion/c8%20dro.JPG" alt="Image 18"></li>
 				<li class="gap"></li>
 				<li class="gap"></li>
 				<li class="gap"></li>
@@ -175,12 +162,12 @@ Con nosotros usted encontrará la apreciación justa y real de sus bienes así c
 
 <!-- Container (Contact Section) -->
 
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACTO</h2>
-  <div class="row">
+<div id="contact" class="container-fluid bg-blue">
+  <h2 class="text-center" style="color: #fff;">CONTACTO</h2>
+  <div class="row" style="color: #fff;">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p>Contactanos y te responderemos en poco tiempo.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Querétaro, Querétaro</p>
       <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>
@@ -210,7 +197,7 @@ Con nosotros usted encontrará la apreciación justa y real de sus bienes así c
 <script src="js/modernizr.js"></script>
 <script>
 function initMap() {
-        var myLatLng = {lat: 20.609245, lng:-100.400252521};
+        var myLatLng = {lat: 20.609190, lng:-100.4001610};
     
         var map = new google.maps.Map(document.getElementById('map'), {
           center: myLatLng,

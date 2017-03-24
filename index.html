@@ -13,17 +13,19 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <section id="cd-intro" class="cd-index">
+    <div class="overlay">    </div>
 
-	<header class="cd-header">
 
-	</header>
-	<section id="cd-intro">
-            <div class="col-md-12 text-center">
-            <img src="img/logo_general.svg" width="30%">
+            <div class="col-md-12 text-center" style="
+    position: relative;
+">
+            <img src="img/logo_general.svg" class="logoresponsive">
         </div>
-		<div id="cd-intro-tagline">
-		</div> <!-- #cd-intro-tagline -->
-	</section> <!-- #cd-intro -->
+            <div id="cd-intro-tagline">
+            </div> <!-- #cd-intro-tagline -->
+
+        </section> <!-- #cd-intro -->
 
 	<div class="cd-secondary-nav">
 		<a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
@@ -172,7 +174,7 @@ Ayudar a crear y construir sus proyectos de ingeniería en las áreas habitacion
     
 <script>
 function initMap() {
-        var myLatLng = {lat: 20.609245, lng:-100.400252521};
+        var myLatLng = {lat: 20.609190, lng:-100.4001610};
     
         var map = new google.maps.Map(document.getElementById('map'), {
           center: myLatLng,

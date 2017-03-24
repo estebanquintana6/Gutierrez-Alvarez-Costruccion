@@ -191,12 +191,29 @@ Intro
 
 -------------------------------- */
 #cd-intro {
-  position: relative;
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
   height: 300px;
-  background: url(../img/intro-background.jpg) no-repeat center center;
-  background-size: cover;
   z-index: 2;
 }
+
+.cd-index {
+  background: url(../img/intro-background.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+.cd-construccion{
+    background: url(../img/bluepattern.jpg) no-repeat center center;
+    background-size: 100% 100%;    
+}
+
+.cd-valuaciones{
+    background: url(../img/blue_gray_pattern-wallpaper-960x600.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+
 #cd-intro #cd-intro-tagline {
   width: 90%;
   max-width: 1170px;
